@@ -1,0 +1,12 @@
+set dFolder to "~/Desktop/QRCodeHistory/"
+set filename to do shell script ("echo \"QR-Code $(date +\"%Y-%m-%d um %H.%M.%S\").png\"")
+
+do shell script ("mkdir -p " & dFolder)
+do shell script (("screencapture " & dFolder & "\"" & filename & "\""))
+try
+	set urls to do shell script (("/usr/local/bin/zbarimg -q " & dFolder & "\"" & filename & "\"" & "| grep -Eo '(http|https)://[^\"]+'"))
+	set urls to paragraphs of urls
+	repeat with urll in urls
+		do shell script ("open " & urll)
+	end repeat
+end try
