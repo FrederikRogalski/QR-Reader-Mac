@@ -6,4 +6,4 @@ The script relies on zbar. You can install it with:
 
 ```brew install zbar```
 
-The script expacts 'zbarimg' at this path '/usr/local/bin/zbarimg' which should be the standard path at which homebrew will install it.
+The script expacts the binary 'zbarimg' at this path '/usr/local/bin/zbarimg' which should be the standard path at which homebrew will install it.
