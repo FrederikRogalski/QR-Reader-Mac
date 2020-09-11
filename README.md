@@ -10,5 +10,7 @@ The script expacts the binary 'zbarimg' at the path '/usr/local/bin/zbarimg' whi
 
 ## Creating Keyboardshortcut
 Save the worklow package in the folder ```'~/Library/Services'```
+
 Then you can create a shortcut under 
+
 ```System Preferences > Keyboard > Shortcuts > Services > General > open_QRCode```
