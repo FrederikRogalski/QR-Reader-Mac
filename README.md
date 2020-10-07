@@ -33,3 +33,7 @@ To install QR-Reader-Mac:
   [2]: https://github.com/FrederikRogalski/QR-Reader-Mac
   [3]: https://i.stack.imgur.com/xRylI.png
   [4]: https://i.stack.imgur.com/4Dm0y.png
+  
+  ## History
+  
+  Every QR-Scan will be safed under the folder `~/Desktop/QRCodeHistory/`.
