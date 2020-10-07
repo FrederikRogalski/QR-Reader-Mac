@@ -8,12 +8,6 @@ The script relies on zbar. You can install it with:
 
 The script expacts the binary 'zbarimg' at the path '/usr/local/bin/zbarimg' which should be the standard path at which homebrew will install it.
 
-## Creating keyboard shortcut
-Save the workflow package in the folder ```'~/Library/Services'```
-
-Then you can create a shortcut under 
-
-```System Preferences > Keyboard > Shortcuts > Services > General > open_QRCode```
 ## Step by step
 
 ZBar can be easily installed with Homebrew:
