@@ -20,7 +20,8 @@ To install QR-Reader-Mac:
     [![enter image description here][3]][3]
 
  2. Double click the ZIP file to extract it.
- 3. Double click the workflow you want to install. The following Pop-UP should appear (If it doesn't follow the steps in ): <img src="https://user-images.githubusercontent.com/31591562/136544285-9b078c84-f89d-4234-9de1-c7a05faa34f2.png" width="600px">
+ 3. Double click the workflow you want to install. The following Pop-UP should appear (If it doesn't follow the steps in ): 
+<img src="https://user-images.githubusercontent.com/31591562/136544285-9b078c84-f89d-4234-9de1-c7a05faa34f2.png" width="600px">
  4. Confirm by pressing `install`.
  5. Open System Preferences and add a shortcut to the open_QRCode service under Keyboard > Shortcuts > Services > General:
 ![image](https://user-images.githubusercontent.com/31591562/136544132-bf1d2889-87b1-4971-b30e-04d441ade14c.png)
