@@ -20,12 +20,10 @@ To install QR-Reader-Mac:
     [![enter image description here][3]][3]
 
  2. Double click the ZIP file to extract it.
- 3. Double click the workflow you want to install. The following Pop-UP should appear (If it doesn't follow the steps in ):
- <img width="498" alt="Screenshot 2021-10-08 at 12 39 47" src="https://user-images.githubusercontent.com/31591562/136542978-25e5697b-b167-40a5-a620-f8d827d4e84c.png">
+ 3. Double click the workflow you want to install. The following Pop-UP should appear (If it doesn't follow the steps in ): <img src="https://user-images.githubusercontent.com/31591562/136544285-9b078c84-f89d-4234-9de1-c7a05faa34f2.png" width="600px">
  4. Confirm by pressing `install`.
  5. Open System Preferences and add a shortcut to the open_QRCode service under Keyboard > Shortcuts > Services > General:
-
-    [![add shortcut][4]][4]
+![image](https://user-images.githubusercontent.com/31591562/136544132-bf1d2889-87b1-4971-b30e-04d441ade14c.png)
 
 (**Important**: Note that QR-Reader-Mac expects to find the executable 'zbarimg' in `/usr/local/bin/zbarimg`, which is the standard path Homebrew will install it.)
 
@@ -39,9 +37,9 @@ Every QR-Scan will be safed under the folder `~/Desktop/QRCodeHistory/`.
 ## Legacy installation
 
 3.1 Move `open_QRCode.workflow` to the `~/Library/Services` folder
+
 3.2 To open `~/Library/Services`, select Finder, press <kbd>Shift</kbd><kbd>Command</kbd><kbd>G</kbd>, paste `~/Library/Services` and press Enter.
 
   [1]: https://github.com/mchehab/zbar
   [2]: https://github.com/FrederikRogalski/QR-Reader-Mac
   [3]: https://i.stack.imgur.com/xRylI.png
-  [4]: https://i.stack.imgur.com/4Dm0y.png
