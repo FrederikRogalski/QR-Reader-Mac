@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>444.42</string>
+	<string>509</string>
 	<key>AMApplicationVersion</key>
-	<string>2.9</string>
+	<string>2.10</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -51,7 +51,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>on run {input, parameters}	set dFolder to "~/Desktop/QRCodeHistory/"	set filename to do shell script ("echo \"QR-Code $(date +\"%Y-%m-%d um %H.%M.%S\").png\"")		do shell script ("mkdir -p " &amp; dFolder)	do shell script (("screencapture " &amp; dFolder &amp; "\"" &amp; filename &amp; "\""))	try		set urls to do shell script (("/usr/local/bin/zbarimg -q " &amp; dFolder &amp; "\"" &amp; filename &amp; "\"" &amp; "| grep -Eo '(http|https)://[^\"]+'"))		set urls to paragraphs of urls		repeat with urll in urls			do shell script ("open " &amp; urll)		end repeat	end try	return inputend run</string>
+					<string>on run {input, parameters}	set dFolder to "~/Desktop/QRCodeHistory/"	set filename to do shell script ("echo \"QR-Code $(date +\"%Y-%m-%d um %H.%M.%S\").png\"")		do shell script ("mkdir -p " &amp; dFolder)	do shell script (("screencapture -i " &amp; dFolder &amp; "\"" &amp; filename &amp; "\""))	try		set urls to do shell script (("/usr/local/bin/zbarimg -q " &amp; dFolder &amp; "\"" &amp; filename &amp; "\"" &amp; "| grep -Eo '(http|https)://[^\"]+'"))		set urls to paragraphs of urls		repeat with urll in urls			do shell script ("open " &amp; urll)		end repeat	end try	return inputend run</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -102,12 +102,10 @@ end run</string>
 						<string>0</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>330.000000:368.000000</string>
+				<string>258.500000:368.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
