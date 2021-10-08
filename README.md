@@ -1,6 +1,9 @@
 # QR-Reader-Mac
 This Applescript reads QR Codes from the screen and processes them via zbar. It extracts the urls and automatically opens them in your standard browser.
 
+## Usage
+![qrreader](https://user-images.githubusercontent.com/31591562/136548790-18e1fc06-16ef-44a1-9510-6ffa505b9da5.gif)
+
 ## Dependencies
 The script relies on zbar. You can install it with:
 
