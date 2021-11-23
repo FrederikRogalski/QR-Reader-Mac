@@ -9,8 +9,6 @@ The script relies on zbar. You can install it with:
 
 ```brew install zbar```
 
-The script expacts the binary 'zbarimg' at the path '/usr/local/bin/zbarimg' which should be the standard path at which homebrew will install it.
-
 ## Step by step
 
 ZBar can be easily installed with Homebrew:
@@ -28,8 +26,6 @@ To install QR-Reader-Mac:
  5. Open System Preferences and add a shortcut to the open_QRCode service under Keyboard > Shortcuts > Services > General:
 ![image](https://user-images.githubusercontent.com/31591562/136544132-bf1d2889-87b1-4971-b30e-04d441ade14c.png)
  6. Some apps need a restart before the shortcut is working (e.g. Chrome).
-
-(**Important**: Note that QR-Reader-Mac expects to find the executable 'zbarimg' in `/usr/local/bin/zbarimg`, which is the standard path Homebrew will install it.)
 
 ## Copy to Clipboard
 The `QRCode2Clipboard.workflow` can be used to extract the content of the QR-Codes into the Clipboard. It can be installed in the same way as the `open_QRCode.workflow`.
