@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>509</string>
+	<string>512</string>
 	<key>AMApplicationVersion</key>
 	<string>2.10</string>
 	<key>AMDocumentVersion</key>
@@ -51,7 +51,8 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>on run {input, parameters}	set dFolder to "~/Desktop/QRCodeHistory/"	set filename to do shell script ("echo \"QR-Code $(date +\"%Y-%m-%d um %H.%M.%S\").png\"")		do shell script ("mkdir -p " &amp; dFolder)	do shell script (("screencapture -i " &amp; dFolder &amp; "\"" &amp; filename &amp; "\""))	try		set urls to do shell script (("/usr/local/bin/zbarimg -q " &amp; dFolder &amp; "\"" &amp; filename &amp; "\"" &amp; "| grep -Eo '(http|https)://[^\"]+'"))		set urls to paragraphs of urls		repeat with urll in urls			do shell script ("open " &amp; urll)		end repeat	end try	return inputend run</string>
+					<string>on run {input, parameters}	set dFolder to "~/Desktop/QRCodeHistory/"	set filename to do shell script ("echo \"QR-Code $(date +\"%Y-%m-%d um %H.%M.%S\").png\"")		do shell script ("mkdir -p " &amp; dFolder)	do shell script (("screencapture -i " &amp; dFolder &amp; "\"" &amp; filename &amp; "\""))	try		set urls to do shell script (("export PATH=\"/usr/local/bin:/opt/homebrew/bin:$PATH\"
+	zbarimg -q " &amp; dFolder &amp; "\"" &amp; filename &amp; "\"" &amp; "| grep -Eo '(http|https)://[^\"]+'"))		set urls to paragraphs of urls		repeat with urll in urls			do shell script ("open " &amp; urll)		end repeat		return input	end tryend run</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -105,7 +106,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>258.500000:368.000000</string>
+				<string>309.000000:368.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -128,17 +129,17 @@ end run</string>
 		<key>presentationMode</key>
 		<integer>11</integer>
 		<key>processesInput</key>
-		<integer>0</integer>
+		<false/>
 		<key>serviceInputTypeIdentifier</key>
 		<string>com.apple.Automator.nothing</string>
 		<key>serviceOutputTypeIdentifier</key>
 		<string>com.apple.Automator.nothing</string>
 		<key>serviceProcessesInput</key>
-		<integer>0</integer>
+		<false/>
 		<key>systemImageName</key>
 		<string>NSTouchBarControlStripScreenshot</string>
 		<key>useAutomaticInputType</key>
-		<integer>0</integer>
+		<false/>
 		<key>workflowTypeIdentifier</key>
 		<string>com.apple.Automator.servicesMenu</string>
 	</dict>
