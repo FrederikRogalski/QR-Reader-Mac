@@ -27,6 +27,8 @@ To install QR-Reader-Mac:
  4. Confirm by pressing `install`.
  5. Open System Preferences and add a shortcut to the open_QRCode service under Keyboard > Shortcuts > Services > General:
 ![image](https://user-images.githubusercontent.com/31591562/136544132-bf1d2889-87b1-4971-b30e-04d441ade14c.png)
+ 
+> Some apps need a restart before the shortcut is working (e.g. Chrome)
 
 (**Important**: Note that QR-Reader-Mac expects to find the executable 'zbarimg' in `/usr/local/bin/zbarimg`, which is the standard path Homebrew will install it.)
 
