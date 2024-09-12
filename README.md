@@ -23,8 +23,7 @@ To install QR-Reader-Mac:
  2. Double click the ZIP file to extract it.
  3. Double click the workflow you want to install. The following Pop-UP should appear: <img src="https://user-images.githubusercontent.com/31591562/136544285-9b078c84-f89d-4234-9de1-c7a05faa34f2.png" width="600px">
  4. Confirm by pressing `install`.
- 5. Open System Preferences and add a shortcut to the open_QRCode service under Keyboard > Shortcuts > Services > General:
-![image](https://user-images.githubusercontent.com/31591562/136544132-bf1d2889-87b1-4971-b30e-04d441ade14c.png)
+ 5. MacOS will open System Settings for you and you will be able to find the workflow in the section 'General'. Here you can add a shortcut by double cklicking on 'None'. You can always find this setting through System Settings > Keyboard > Keyboard Shortcuts... > Services: ![MacOS System Settings > Keyboard > Keyboard Shortcuts... > Services > Shortcuts](https://github.com/user-attachments/assets/bbfb8d8e-f1aa-4b5c-94ef-0041d6e21baf)
  6. Some apps need a restart before the shortcut is working (e.g. Chrome).
 
 ## Copy to Clipboard
