@@ -42,4 +42,4 @@ Every QR-Scan will be safed under the folder `~/Desktop/QRCodeHistory/`.
 
   [1]: https://github.com/mchehab/zbar
   [2]: https://github.com/FrederikRogalski/QR-Reader-Mac
-  [3]: https://i.stack.imgur.com/xRylI.png
+  [3]: https://i.sstatic.net/xRylI.png
